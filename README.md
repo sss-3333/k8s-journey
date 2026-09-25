@@ -2,7 +2,7 @@
 
 Container orchestration at scale. Kubernetes runs your containers in production with high availability.
 
-## What You'll Learn
+## Whats Covered
 
 - Kubernetes architecture
 - Pods, Deployments, Services
@@ -17,18 +17,10 @@ Container orchestration at scale. Kubernetes runs your containers in production 
 
 ```
 09-kubernetes/
-├── notes/       # Your notes from lessons
-├── labs/        # Completed lab exercises
-└── projects/    # Hands-on projects
+├── notes/       
+├── labs/        
+└── projects/   
 ```
-
-## Suggested Projects
-
-- [ ] Deploy a multi-tier application
-- [ ] Set up Ingress with TLS
-- [ ] Create a Helm chart for your app
-- [ ] Implement horizontal pod autoscaling
-- [ ] Set up monitoring with Prometheus/Grafana
 
 ## Key Resources
 
@@ -108,14 +100,6 @@ spec:
       targetPort: 80
   type: ClusterIP
 ```
-
-## Local Development
-
-For learning, use one of these to run Kubernetes locally:
-
-- **Kind** – Kubernetes in Docker (recommended)
-- **Minikube** – Local VM-based cluster
-- **Docker Desktop** – Built-in Kubernetes
 
 ## Resources
 
