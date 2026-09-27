@@ -1,4 +1,4 @@
-# Kubernetes Notes: Services (Exposing Applications)
+# Services (Exposing Applications)
 
 What Services are, how they find pods, and the three main types: ClusterIP, NodePort, LoadBalancer. Includes the ClusterIP demo and how to test a Service.
 

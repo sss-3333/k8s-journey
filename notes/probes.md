@@ -1,4 +1,4 @@
-# Kubernetes Notes: Probes
+# Probes
 
 Liveness, readiness and startup probes: what they check and what happens when they fail.
 

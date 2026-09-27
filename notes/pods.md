@@ -1,4 +1,4 @@
-# Kubernetes Notes: Pods
+# Pods
 
 Pods, YAML structure, declarative vs imperative, pod phases, CrashLoopBackOff.
 

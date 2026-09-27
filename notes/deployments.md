@@ -1,4 +1,4 @@
-# Kubernetes Notes: Deployments, ReplicaSets, Updates and Rollbacks
+# Deployments, ReplicaSets, Updates and Rollbacks
 
 How deployments manage pods through ReplicaSets, rolling updates vs recreate, and rolling back.
 

@@ -1,4 +1,4 @@
-# Kubernetes Notes: Sections 1 & 2 - Basics, Architecture and Setup
+# Basics, Architecture and Setup
 
 ---
 

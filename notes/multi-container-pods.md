@@ -1,4 +1,4 @@
-# Kubernetes Notes: Multi-Container Pods and Debugging
+# Multi-Container Pods and Debugging
 
 Init containers, sidecars, ambassadors, adapters, and ephemeral debug containers.
 

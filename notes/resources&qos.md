@@ -1,4 +1,4 @@
-# Kubernetes Notes: Resources, QoS, LimitRanges and ResourceQuotas
+# Resources, QoS, LimitRanges and ResourceQuotas
 
 Requests and limits, QoS classes and eviction, and namespace-level resource governance.
 

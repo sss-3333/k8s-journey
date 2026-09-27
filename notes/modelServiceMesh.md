@@ -1,4 +1,4 @@
-# Kubernetes Notes: Pod Networking Model and Service Meshes
+# Pod Networking Model and Service Meshes
 
 The rule that underpins all Kubernetes networking, why service meshes exist, how they work, and how they differ from Ingress.
 

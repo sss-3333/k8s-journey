@@ -1,4 +1,4 @@
-# Kubernetes Notes: Labels, Selectors and Annotations
+# Labels, Selectors and Annotations
 
 How Kubernetes objects find each other through labels, and where annotations fit.
 

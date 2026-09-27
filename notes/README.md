@@ -1,33 +1,19 @@
 # Notes
 
-Add your notes here as you progress through this module.
+My Kubernetes study notes.
 
-## Template
+## Contents
 
-When creating a new note, you can use this structure:
-
-```markdown
-# Topic Name
-
-## Key Concepts
-
-- Point 1
-- Point 2
-
-## Commands
-
-`command` - what it does
-
-## Examples
-
-(code examples)
-
-## What I Learned
-
-(your own summary)
-```
-
-## Your Notes
-
-- [ ] Add your first note
-
+| # | Notes | Topics |
+|---|---|---|
+| 01 | [Basics & Architecture](.\Basics_and_architecture.md) | Containers vs VMs, control plane and worker nodes, container runtimes, how a pod starts, namespaces, local cluster with kind |
+| 02 | [Pods](./pods.md) | Pod YAML, declarative vs imperative, pod phases, CrashLoopBackOff |
+| 03 | [Multi-Container Pods](./multi-container-pods.md) | Init containers, sidecars, ambassadors, adapters, ephemeral debug containers |
+| 04 | [Deployments](./deployments.md) | Deployments, ReplicaSets, rolling updates, Recreate, rollbacks |
+| 05 | [Probes](./probes.md) | Liveness, readiness and startup probes |
+| 06 | [Resources & QoS](./resources&qos.md) | Requests and limits, QoS classes, LimitRanges, ResourceQuotas |
+| 07 | [Labels, Selectors & Annotations](./labels-selectors-annotations.md) | Labels, equality and set-based selectors, annotations |
+| 08 | [Services](./services.md) | ClusterIP, NodePort, LoadBalancer, endpoints, testing services |
+| 09 | [Headless & ExternalName Services](./headless&externalNameServices.md) | Headless services, StatefulSet DNS, ExternalName |
+| 10 | [Networking Model & Service Mesh](./modelServiceMesh.md) | Flat pod network, CNI, service meshes, Ingress vs mesh |
+| 11 | [Storage](./services.md) | PVs and PVCs, access modes, StorageClasses, dynamic provisioning, ephemeral volumes, CSI |

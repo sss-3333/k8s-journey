@@ -1,4 +1,4 @@
-# Kubernetes Notes: Headless and ExternalName Services
+# Headless and ExternalName Services
 
 Two special Service types that work through **DNS** instead of a normal cluster IP.
 
