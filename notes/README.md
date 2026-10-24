@@ -18,3 +18,4 @@ My Kubernetes study notes.
 | 10 | [Networking Model & Service Mesh](./modelServiceMesh.md) | Flat pod network, CNI, service meshes, Ingress vs mesh |
 | 11 | [Storage](./storage.md) | PVs and PVCs, access modes, StorageClasses, dynamic provisioning, ephemeral volumes, CSI |
 | 12 | [ConfigMaps](./configmaps.md) | Creating ConfigMaps, env vars vs volume mounts, envFrom, verifying in a pod |
+| 13 | [Secrets](./secrets.md) | Creating and decoding Secrets, using them in pods, why they aren't secure by default, KMS, ESO, Sealed Secrets |
