@@ -161,7 +161,60 @@ The old `--record` flag is deprecated. Use the annotation.
 
 ---
 
-## Commands
+## 5. StatefulSets and DaemonSets
+
+### StatefulSets
+
+A StatefulSet is a Kubernetes controller designed for **stateful applications** that need stable identities and persistent storage.
+
+Unlike Deployments, where Pods are interchangeable, StatefulSets give each Pod a predictable identity.
+
+What it does:
+- **Stable Pod names:** Pods have predictable names such as `postgres-0`, `postgres-1`, and `postgres-2`.
+- **Persistent storage:** Each Pod can have its own PVC, allowing replacement Pods to reconnect to their existing data.
+- **Ordered deployment:** By default, Pods are created and terminated in a defined order.
+- **Self-healing:** If a Pod fails, Kubernetes recreates it with the same identity.
+
+**Use cases:** PostgreSQL databases, MongoDB, and other stateful distributed systems.
+
+> Analogy: A hotel where each guest has an assigned room. Even if the guest temporarily leaves, their room and belongings remain assigned to them.
+
+**Key point:** StatefulSet = Stable identity + Persistent storage.
+
+### DaemonSets
+
+A DaemonSet is a Kubernetes controller that ensures **one copy of a Pod runs on every eligible node**, or a selected subset of nodes.
+
+What it does:
+- Automatically deploys a Pod onto each eligible worker node.
+- When a new eligible node joins the cluster, a Pod is automatically created on it.
+- When a node is removed, its associated DaemonSet Pod is removed.
+- Ensures node-level services run consistently across the cluster.
+
+**Use cases:**
+- Log collection agents, such as Fluent Bit.
+- Monitoring agents, such as Prometheus Node Exporter.
+- Networking agents.
+
+> Analogy: Every building in a company needs its own security guard. Whenever a new building opens, another guard is automatically assigned.
+
+**Key point:** DaemonSet = One Pod per eligible node.
+
+### Deployment vs StatefulSet vs DaemonSet
+
+| Controller | Purpose | Use case |
+|---|---|---|
+| Deployment | Maintains a desired number of interchangeable Pods | APIs and web applications |
+| StatefulSet | Maintains Pods with stable identities and persistent storage | Databases |
+| DaemonSet | Runs a Pod on every eligible node | Logging and monitoring |
+
+### Commands
+
+- `kubectl get statefulsets` — List StatefulSets.
+- `kubectl describe statefulset <name>` — Inspect a StatefulSet.
+- `kubectl get daemonsets` — List DaemonSets.
+- `kubectl describe daemonset <name>` — Inspect a DaemonSet.
+
 ```bash
 kubectl apply -f deploy.yaml
 kubectl create deployment <name> --image=nginx --replicas=3
